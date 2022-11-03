@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_gallery/home_screen/home_screen.dart';
 
 import 'login_screen/login_screen.dart';
 
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       routes: {
         LogInScreen.routeName: (_) => LogInScreen(),
+        HomeScreen.routeName: (_) => HomeScreen(),
       },
       initialRoute: LogInScreen.routeName,
     );

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../home_screen/home_screen.dart';
+
 class LogInScreen extends StatelessWidget {
   static const String routeName = 'Log In Screen';
 
@@ -42,8 +44,15 @@ class LogInScreen extends StatelessWidget {
                         TextFormField(
                           decoration: InputDecoration(hintText: 'User Name'),
                         ),
-                        TextFormField(),
-                        ElevatedButton(onPressed: () {}, child: Text(''))
+                        TextFormField(
+                          decoration: InputDecoration(hintText: 'Password'),
+                        ),
+                        ElevatedButton(
+                            onPressed: () {
+                              Navigator.pushReplacementNamed(
+                                  context, HomeScreen.routeName);
+                            },
+                            child: Text('SUBMIT'))
                       ],
                     ),
                   ),
