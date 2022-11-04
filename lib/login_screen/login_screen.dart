@@ -37,17 +37,37 @@ class LogInScreen extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(16),
                     child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        Text('LOG IN',
-                            style: TextStyle(
-                                fontSize: 30, fontWeight: FontWeight.bold)),
-                        TextFormField(
-                          decoration: InputDecoration(hintText: 'User Name'),
+                        Center(
+                          child: Text('LOG IN',
+                              style: TextStyle(
+                                  fontSize: 30, fontWeight: FontWeight.bold)),
                         ),
                         TextFormField(
-                          decoration: InputDecoration(hintText: 'Password'),
+                          decoration: InputDecoration(
+                              border: OutlineInputBorder(
+                                borderSide: BorderSide.none,
+                                borderRadius: BorderRadius.circular(70),
+                              ),
+                              filled: true,
+                              fillColor: Color(0xFFF7F7F7),
+                              hintText: 'User Name'),
+                        ),
+                        TextFormField(
+                          decoration: InputDecoration(
+                              border: OutlineInputBorder(
+                                borderSide: BorderSide.none,
+                                borderRadius: BorderRadius.circular(70),
+                              ),
+                              filled: true,
+                              fillColor: Color(0xFFF7F7F7),
+                              hintText: 'Password'),
                         ),
                         ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                                primary: Color(0xFF7BB3FF)),
                             onPressed: () {
                               Navigator.pushReplacementNamed(
                                   context, HomeScreen.routeName);
