@@ -1,16 +1,3 @@
-# my_gallery
 
-A new Flutter project.
+https://user-images.githubusercontent.com/110188886/199925674-4dede87d-c067-426d-9245-5b2a60bdb933.mp4
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials, samples, guidance on
-mobile development, and a full API reference.
